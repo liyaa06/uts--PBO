@@ -5,7 +5,7 @@ class Karyawan {
     this.kuotaCuti = kuotaCuti;
   }
 
-  ajukanCuti(jumlahHari, jenisCuti) //method 
+  memintaCuti(jumlahHari, jenisCuti) //method 
   {
     if (jumlahHari > this.kuotaCuti) {
       console.log(`${this.nama}: Pengajuan cuti tidak disetujui karna Kuota anda tidak cukup untuk ${jenisCuti}.`);
@@ -41,6 +41,6 @@ const husen = new CutiTahunan("husen");
 const fadel = new CutiSakit("fadel");
 const liya = new CutiMelahirkan("liya");
 
-husen.ajukanCuti(10, "Cuti Tahunan");     
-fadel.ajukanCuti(5, "Cuti Sakit");       
-liya.ajukanCuti(75, "Cuti Melahirkan"); 
+husen.memintaCuti(10, "Cuti Tahunan");     
+fadel.memintaCuti(5, "Cuti Sakit");       
+liya.memintaCuti(75, "Cuti Melahirkan"); 
